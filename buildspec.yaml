@@ -11,7 +11,7 @@ phases:
     commands:
       - echo Build completed on `date`
       - mvn package
-      - aws cloudformation package --template-file template.yaml --s3-bucket sam-local-java --output-template-file template-export.yaml
+      - aws cloudformation package --template-file template.yaml --s3-bucket ram.json --output-template-file template-export.yaml
 artifacts:
   type: zip
   files:
